@@ -43,7 +43,7 @@
 	ICollidableSurface şunları içermelidir:
 		- bool IsCoordinatesEmpty(Coordinates coordinates)
 	
-	ICommand<T> şunları içermelidir:
+	ICommand<T> şunları içermelidir://generic
 		- T tipi class olmalıdır
 		- void ExecuteCommand(T commandObject)
 	
