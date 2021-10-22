@@ -8,8 +8,7 @@ namespace OOPAssignment
 {
     public class Car : CarInfo, ICarCommand, IObservable<CarInfo>
     {
-        //public Guid Id;
-        //public Coordinates Coordinates;
+       
         public Direction Direction;
         public ISurface Surface;
 
@@ -17,7 +16,6 @@ namespace OOPAssignment
 
         public Car(Coordinates coordinates, Direction direction, ISurface surface):base(Guid.NewGuid(), coordinates)
         {
-            //this.Coordinates = coordinates;
             this.Direction = direction;
             this.Surface = surface;
         }

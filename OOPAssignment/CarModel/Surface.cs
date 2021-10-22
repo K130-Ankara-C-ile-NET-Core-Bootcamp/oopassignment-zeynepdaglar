@@ -18,7 +18,7 @@ namespace OOPAssignment
             return new List<CarInfo>(carInfo);
         }
 
-        public bool IsCoordinatesEmpty(Coordinates coordinates) //verilen kordinatta araba var mı kontrol eder
+        public bool IsCoordinatesEmpty(Coordinates coordinates) 
         {
             for (int i = 0; i < carInfo.Count; i++)
             {
@@ -30,7 +30,7 @@ namespace OOPAssignment
             return true;
         }
 
-        public bool IsCoordinatesInBounds(Coordinates coordinates) //verilen kordinatlar haritayı aşıyor mu 
+        public bool IsCoordinatesInBounds(Coordinates coordinates) 
         {
             if (coordinates.Y >= Height || coordinates.X >= Width || coordinates.X < 0 || coordinates.Y <0)
             {
@@ -51,10 +51,6 @@ namespace OOPAssignment
             }
             carInfo.Add(provider);
         }
-
-     
-
-        //private readonly List<CarInfo> ObservableCars = new List<CarInfo>();
 
         public Surface(long width, long height)
         {
